@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles2.css">
         <meta charset="UTF-8">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -9,8 +10,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
-<section>
-About
+<section id="Home">
+<h1>Vardenis Pavardenis</h1>
+<p>tekstas</p>
+<nav>
+<ul>
+    <a href="#Home"><button type="button" class="custom-button">Home</button></a>
+    <a href="#About"><button type="button" class="custom-button">About</button></a>
+    <a href="#Resume"><button type="button" class="custom-button">Resume</button></a>
+    <a href="#Portfolio"><button type="button" class="custom-button">Portfolio</button></a>
+    <a href="#Service"><button type="button" class="custom-button">Service</button></a>
+</ul>
+</nav>
+</section>
+<section id="About">
 <ul>
     <li>birthday: 19 December 2004</li>
     <li>Age: 19</li>
@@ -23,18 +36,17 @@ About
 </ul>
 <img src="images/spy-icon-browse-web-privately-260nw-2504334103.webp" alt="">
 </section>
-<section>
-Resume
+<section id="Resume">
+  <button type="button" id="darkModeButton" class="custom-button">Dark mode</button>
 </section>
-<section>
-Portfolio
+<section id="Portfolio">
 </section>
-<section>
-Service
+<section id="Service">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=MsbKwH2TxyrduDWS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <audio controls>
         <source src="horse.mp3" type="audio/mpeg">
     </audio>
 </section>
+<script src="functions.js"> </script>
 </body>
 </html>
