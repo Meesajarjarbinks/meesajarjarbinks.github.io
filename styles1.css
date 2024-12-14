@@ -1,0 +1,185 @@
+/* Header Styles */
+header {
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header img {
+    height: 50px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+/* Navigation Bar Styles */
+nav {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul a {
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav ul.custom-button {
+    padding: 10px 20px;
+}
+nav ul.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+nav.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+.custom-button{
+    font-family: 'Arial';
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+.custom-button {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+.custom-button:hover {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+  body {
+    background-color: white;
+    color: black;
+    font-family: Arial;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* General Section Styles */
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#Home {
+    background-color: lightblue;
+    padding-top: 100px;
+}
+
+#About, #Resume, #Portfolio, #Service {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+#About ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#About ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    section {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .custom-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+#scrollupbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+  }
+  
+  #scrollupbutton:hover {
+    background-color: #0056b3;
+  }

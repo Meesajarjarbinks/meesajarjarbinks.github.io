@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="styles2.css">
+        <link rel="stylesheet" href="styles1.css">
         <meta charset="UTF-8">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -10,43 +9,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
-<section id="Home">
-<h1>Vardenis Pavardenis</h1>
-<p>tekstas</p>
-<nav>
-<ul>
-    <a href="#Home"><button type="button" class="custom-button">Home</button></a>
-    <a href="#About"><button type="button" class="custom-button">About</button></a>
-    <a href="#Resume"><button type="button" class="custom-button">Resume</button></a>
-    <a href="#Portfolio"><button type="button" class="custom-button">Portfolio</button></a>
-    <a href="#Service"><button type="button" class="custom-button">Service</button></a>
-</ul>
-</nav>
-</section>
-<section id="About">
-<ul>
-    <li>birthday: 19 December 2004</li>
-    <li>Age: 19</li>
-    <li>Website: www.expamle.com</li>
-    <li>Degree: None</li>
-    <li>Phone: +666 666 66666</li>
-    <li>Email: email@example.com</li>
-    <li>City: Gotham</li>
-    <li>Freelance: Available</li>
-</ul>
-<img src="images/spy-icon-browse-web-privately-260nw-2504334103.webp" alt="">
-</section>
-<section id="Resume">
-  <button type="button" id="darkModeButton" class="custom-button">Dark mode</button>
-</section>
-<section id="Portfolio">
-</section>
-<section id="Service">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=MsbKwH2TxyrduDWS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <audio controls>
-        <source src="horse.mp3" type="audio/mpeg">
-    </audio>
-</section>
-<script src="functions.js"> </script>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <img src="images/spy-icon-browse-web-privately-260nw-2504334103.webp" alt="Puslapio ikona">
+        <nav>
+            <ul>
+                <a href="#Home"><button type="button" class="custom-button">Home</button></a>
+                <a href="#About"><button type="button" class="custom-button">About</button></a>
+                <a href="#Resume"><button type="button" class="custom-button">Resume</button></a>
+                <a href="#Portfolio"><button type="button" class="custom-button">Portfolio</button></a>
+                <a href="#Service"><button type="button" class="custom-button">Service</button></a>
+            </ul>
+        </nav>
+    </header>
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ </script>
+    <!-- Home Section -->
+    <section id="Home">
+        <h1>Kristupas Kairys</h1>
+        <p>Esu inžinierius</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="About">
+        <h2>About</h2>
+        <ul>
+            <li>Birthday: 19 December 2004</li>
+            <li>Age: 19</li>
+            <li>Website: www.example.com</li>
+            <li>Degree: None</li>
+            <li>Phone: +666 666 66666</li>
+            <li>Email: email@example.com</li>
+            <li>City: Gotham</li>
+            <li>Freelance: Available</li>
+        </ul>
+        <img src="images/spy-icon-browse-web-privately-260nw-2504334103.webp" alt="Profilio nuotrauka">
+    </section>
+
+    <!-- Resume Section -->
+    <section id="Resume">
+        <h2>Resume</h2>
+        <p>tekstas</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="Portfolio">
+        <h2>Portfolio</h2>
+        <p>tekstas</p>
+    </section>
+
+    <!-- Service Section -->
+    <section id="Service">
+        <h2>Services</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <audio controls>
+            <source src="horse.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <button type="button" id="darkModeButton" class="custom-button">Dark mode</button> 
+    <button id="scrollupbutton" style="display: none;">⬆</button>
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <p>Contact: +666 666 66666 | email@example.com</p>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Dark Mode Script -->
+    <script src="functions.js"></script>
 </body>
 </html>
