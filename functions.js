@@ -7,11 +7,11 @@ darkModeButton.addEventListener('click', () => {
     darkModeButton.textContent = 'Dark Mode';
   }
 })
-// Scroll-to-Top Button Logic
+// Slinkimo į viršų mygtukas
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopButton = document.getElementById("scrollupbutton");
   
-  // Show or hide the button based on scroll position
+  // mygtuko slėpimas
   window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
       scrollToTopButton.style.display = "block";
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Smooth scroll to the top on button click
+  // malonus perėjimas
   scrollToTopButton.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
@@ -28,3 +28,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Funkcija, kuri gauna dabartinį laiką ir paverčia jį į formatą vv:mm:ss
+function updateClock() {
+  // Gaukite dabartinį laiką
+  const now = new Date();
+
+  // Suformuokite valandas, minutes ir sekundes
+  const hours = String(now.getHours()).padStart(2, '0'); // Dviejų skaitmenų valandos
+  const minutes = String(now.getMinutes()).padStart(2, '0'); // Dviejų skaitmenų minutės
+  const seconds = String(now.getSeconds()).padStart(2, '0'); // Dviejų skaitmenų sekundės
+
+  // Paverskite laiką į formatą hh:mm:ss
+  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  // Raskite laikrodžio elementą HTML faile
+  const clockElement = document.getElementById('Resumetext');
+
+  // Atnaujinkite laikrodžio tekstą
+  clockElement.textContent = timeString;
+}
+
+// Nustatykite, kad funkcija būtų vykdoma kas sekundę
+setInterval(updateClock, 1000);
+
+// Inicialiai atnaujinkite laikrodį, kad nereikėtų laukti pirmos sekundės
+updateClock();
